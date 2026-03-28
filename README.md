@@ -1,7 +1,5 @@
 # MAC-with-truncated-output-attack
 
-# MAC Truncation Attack Demonstrator
-
 ## 🎯 Project Overview
 
 This project demonstrates the **Birthday Attack vulnerability** on truncated Message Authentication Codes (MACs) and shows how using full-length MACs provides effective prevention. The system implements three different MAC algorithms and visualizes the dramatic security improvement when moving from truncated (32-bit) to full-length (128-bit) MAC tags.
