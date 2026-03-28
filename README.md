@@ -1,13 +1,17 @@
 # MAC-with-truncated-output-attack
 
+# MAC Truncation Attack Demonstrator
+
 ## 🎯 Project Overview
 
 This project demonstrates the **Birthday Attack vulnerability** on truncated Message Authentication Codes (MACs) and shows how using full-length MACs provides effective prevention. The system implements three different MAC algorithms and visualizes the dramatic security improvement when moving from truncated (32-bit) to full-length (128-bit) MAC tags.
 
-### 📊 Key Demonstration
+### 📊 Key Demonstration Results
 
-- **Before Prevention (Truncated MAC)**: Attack success rate **90-100%** - System is VULNERABLE
-- **After Prevention (Full MAC)**: Attack success rate **<5%** - System is SECURE
+| Phase | MAC Type | Attack Success Rate | Security Status |
+|-------|----------|---------------------|-----------------|
+| **Before Prevention** | Truncated (32-bit) | **90-100%** | 🔴 VULNERABLE |
+| **After Prevention** | Full (128-bit) | **<5%** | 🟢 SECURE |
 
 ### 🔬 Security Concepts Demonstrated
 
@@ -22,12 +26,28 @@ This project demonstrates the **Birthday Attack vulnerability** on truncated Mes
 
 ### System Requirements
 - **Python 3.7+** (3.8+ recommended)
-- **Operating System**: Windows, Linux, or macOS
-- **Network**: Localhost connection (no internet required)
+- **Operating System**: Windows 10/11, Linux (Ubuntu 18.04+), or macOS 10.15+
+- **RAM**: Minimum 4GB (8GB recommended)
+- **Network**: Localhost connection (no internet required after installation)
+- **Disk Space**: 500MB free space
 
 ### Required Python Packages
+- cryptography >= 41.0.7
+- matplotlib >= 3.7.2
+- numpy >= 1.24.3
 
+---
+
+## 🚀 Installation Guide
+
+### Step 1: Install Python
+
+#### Windows
+1. Download Python 3.8+ from [python.org](https://www.python.org/downloads/)
+2. Run installer → **CHECK** "Add Python to PATH"
+3. Click "Install Now"
+
+#### Linux (Ubuntu/Debian)
 ```bash
-pip install cryptography==41.0.7
-pip install matplotlib==3.7.2
-pip install numpy==1.24.3
+sudo apt update
+sudo apt install python3 python3-pip python3-tk
