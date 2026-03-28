@@ -1,4 +1,4 @@
-# MAC-with-truncated-output-attack
+# MAC with truncated output attack
 
 ## 🎯 Project Overview
 
